@@ -25,7 +25,7 @@ def visualize_data(df, column1, column2):
     plt.show()
 
 if __name__ == "__main__":
-    # Örnek bir CSV dosyası ile çalışmak için
+    
     filepath = "data/sample_data.csv"
     df = load_data(filepath)
     basic_analysis(df)
