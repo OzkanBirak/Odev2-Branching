@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def load_data(filepath):
-    """CSV dosyasını yükleyip DataFrame olarak döndürür."""
+    
     return pd.read_csv(filepath)
 
 def basic_analysis(df):
-    """Veri setinin temel istatistiklerini döndürür."""
+    
     print("Veri setinin ilk 5 satırı:")
     print(df.head())
     print("\nVeri setinin sütun bilgileri:")
@@ -16,7 +16,7 @@ def basic_analysis(df):
     print(df.describe())
 
 def visualize_data(df, column1, column2):
-    """Belirtilen iki sütun arasındaki dağılımı gösterir."""
+    
     plt.figure(figsize=(8,5))
     sns.scatterplot(x=df[column1], y=df[column2])
     plt.xlabel(column1)
